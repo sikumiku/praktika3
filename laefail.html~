@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Praktikum3</title>
+    <script src="myscript.js"></script> 
+</head>
+	<div id="header">
+	
+	<ul>
+		<li><a href="kodu.html">Pealeht</a></li>
+		<li><a href="galerii.html">Galerii</a></li>
+		<li><a href="laefail.html">Lisa oma pilt</a></li>
+	</ul>
+	
+	</div>
+	
+	<div id="banner">
+	
+		<img src="banner1.jpg" alt="banner">
+		
+	</div>
+	
+	<div id="wrap">
+
+</div>
+<textarea name="text" rows="5" cols="60" placeholder="Siia tuleb kirjutada."><?php if(!empty($_POST["text"])) echo htmlspecialchars($_POST["text"]); ?></textarea><br/>
+<form action="yleslaetudfailid.php" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+<div id="footer">See on lehe footer</div>
+</body>
+</html>
